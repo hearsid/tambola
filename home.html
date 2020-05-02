@@ -22,31 +22,68 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
           <div class="container">
             <div>
-                <h1 style="color:#fff">Tambola Game - Let's meditate</h1>
+                <h1 style="color:#fff">Tambola Saturday Night - Let's meditate</h1>
             </div>
           </div>
         </nav>
 
         <div class="container"> 
-            <div class="bigNumberDisplay well well-lg">
-                <span id="numCounter" style="color: rgb(25, 75, 179); zoom: 100%;">47</span>
-                <span class="mirage" id="mirageElement" style="display: none;">90</span>
-                <div class="bingoNumberDesc" id="bingoWords">Year of Independence</div>
-            </div>
-            <div>
-                <input id="btnGenerate" type="button" value="Generate Number">
-            </div> 
-            <br> 
-            <div class="row"> 
-                <div class="col-md-2 well well-lg text-left">
+            <div class="col-md-3 well well-lg text-left">
                         <ol>
-                            <li>Early Five</li>
+                          <li>  <span class="title">Unlucky</span>- 
+Vir Hanumana Ati Balawana🧘🏻‍♂️</li>
+<li> 
+<span class="title">First 5</span>- Kabhi ram banake kabhi Shyam banake chale aana🙏
+</li>
+<li> 
+<span class="title">Bamboo</span>- Radhe Radhe abb toh chale aayenge bihari🙏
+</li>
+<li> 
+<span class="title">Corners</span>- mere ghar ke aage Sai Nath tera mandir ban jaye🙏
+</li>
+<li> 
+<span class="title">First line</span>- Maya ka chola hai rangla🙏
+</li>
+<li> 
+<span class="title">Second line</span>- Aisi lagi lagan Meera ho gyi magan🙏
+</li>
+<li> 
+<span class="title">Third line</span>- Raghupati Raghav rajaraam🙏
+</li>
+<li> 
+<span class="title">First house</span> - Choti choti gayiya chote chote gawaal🙏
+</li>
+<li> 
+<span class="title">Second house</span>- Radhika Gori se biRaj ki choti se Maiya Karade mero biyaah🙏
+</li>
+<li> 
+<span class="title">Third house</span>- cham cham nache bir Hanumana🙏
+</li>
+<li> 
+<span class="title">Lucky number</span>- apni iksha se jo bhi gaye🙏🌱
+</li>
+                            <!-- <li>Early Five</li>
                             <li>Rows Completion , 3 Allowed</li>
                             <li>Full Housie</li>
-                            <li>King - Queen. Smallest &amp; Largest number in ticket</li>
+                            <li>King - Queen. Smallest &amp; Largest number in ticket</li> -->
                         </ol>  
                     <div id="prevNum">0</div>
+                    <div>(Previous Number)</div>
                 </div>
+
+            
+            <div class="col-md-9"> 
+                
+                <div class="bigNumberDisplay well well-lg">
+                <span id="numCounter" style="color: rgb(25, 75, 179); zoom: 100%;">0</span>
+                <span class="mirage" id="mirageElement" style="display: none;">90</span>
+                <div class="bingoNumberDesc" id="bingoWords"></div>
+            </div>
+            <div>
+                <input id="btnGenerate" type="button" value="Generate Number" class="btn btn-primary" />
+            </div> 
+            <br> 
+
                 <div class="col-md-10"> 
                     <table>
                         <tbody><tr> <td class="cell0">0</td> <td class="cell10">10</td> <td class="cell20">20</td> <td class="cell30">30</td> <td class="cell40">40</td> <td class="cell50">50</td> <td class="cell60">60</td> <td class="cell70">70</td> <td class="cell80">80</td> <td class="cell90">90</td> </tr>
@@ -56,7 +93,7 @@
                         <tr> <td class="cell4">4</td> <td class="cell14">14</td> <td class="cell24">24</td> <td class="cell34">34</td> <td class="cell44">44</td> <td class="cell54">54</td> <td class="cell64">64</td> <td class="cell74">74</td> <td class="cell84">84</td> <td class="cell94">94</td> </tr>
                         <tr> <td class="cell5">5</td> <td class="cell15">15</td> <td class="cell25">25</td> <td class="cell35">35</td> <td class="cell45">45</td> <td class="cell55">55</td> <td class="cell65">65</td> <td class="cell75">75</td> <td class="cell85">85</td> <td class="cell95">95</td> </tr>
                         <tr>  <td class="cell6">6</td> <td class="cell16">16</td> <td class="cell26">26</td> <td class="cell36">36</td> <td class="cell46">46</td> <td class="cell56">56</td> <td class="cell66">66</td> <td class="cell76">76</td> <td class="cell86">86</td> <td class="cell96">96</td> </tr>
-                        <tr> <td class="cell7">7</td> <td class="cell17">17</td> <td class="cell27">27</td> <td class="cell37">37</td> <td class="cell47 selected">47</td> <td class="cell57">57</td> <td class="cell67">67</td> <td class="cell77">77</td> <td class="cell87">87</td> <td class="cell97">97</td> </tr>
+                        <tr> <td class="cell7">7</td> <td class="cell17">17</td> <td class="cell27">27</td> <td class="cell37">37</td> <td class="cell47">47</td> <td class="cell57">57</td> <td class="cell67">67</td> <td class="cell77">77</td> <td class="cell87">87</td> <td class="cell97">97</td> </tr>
                         <tr> <td class="cell8">8</td> <td class="cell18">18</td> <td class="cell28">28</td> <td class="cell38">38</td> <td class="cell48">48</td> <td class="cell58">58</td> <td class="cell68">68</td> <td class="cell78">78</td> <td class="cell88">88</td> <td class="cell98">98</td> </tr>
                         <tr> <td class="cell9">9</td> <td class="cell19">19</td> <td class="cell29">29</td> <td class="cell39">39</td> <td class="cell49">49</td> <td class="cell59">59</td> <td class="cell69">69</td> <td class="cell79">79</td> <td class="cell89">89</td> <td class="cell99">99</td> </tr> 
                     </tbody></table>
@@ -66,6 +103,21 @@
         </div>
         <style type="text/css">
         body { padding-top: 70px; }
+    li > span.title {
+        font-weight: bold;
+    }
+        body::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: url('./assets/yoga.jpg');
+            background-size: 115% 100%;
+            opacity: .4;
+            content: "";
+            z-index: -1;
+        }
             .divRules{
                 float:left;
                 width:20%;
@@ -100,7 +152,7 @@
             } 
             td {
                 min-width: 100px;
-                color: #fff;
+                color: transparent;
                 font-size: 2em;
             } 
             td.selected {
