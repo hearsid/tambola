@@ -1,0 +1,102 @@
+      body {
+          padding-top: 70px;
+          background: url('../img/background.jpg');
+          background-attachment: fixed;
+          background-size: 100% 100%;
+
+      }
+
+      li>span.title {
+          font-weight: bold;
+      }
+
+      body::before {
+          position: absolute;
+
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          opacity: .8;
+          content: "";
+          z-index: -1;
+      }
+
+      #background-image {
+          width:100%;
+          height:100%;
+
+      }
+
+      .divRules {
+          float: left;
+          width: 20%;
+          text-align: left;
+          font-size: 20px;
+      }
+
+      #prevNum {
+          font-size: 60px;
+          color: #f00;
+      }
+
+      .bingoNumberDesc {
+          font-size: 0.3em;
+          vertical-align: text-top;
+      }
+
+      div {
+          text-align: center;
+      }
+
+      .left-sidebar {
+        background: rgba(255,255,255,0.7)
+      }
+
+      .bigNumberDisplay {
+          font-size: 6em;
+          background: rgba(255,255,255,0.5)
+      }
+
+      .numbersTable {
+          font-size: 1.6em;
+          width: 100%
+      }
+
+      table#numberTable {
+          margin-left: auto;
+          margin-right: auto;
+          background: rgba(255,255,255,0.8)
+      }
+
+      table#numberTable,
+      #numberTable tr,
+      #numberTable td {
+          border-collapse: collapse;
+          border: solid 1px #999;
+      }
+
+      #numberTable td {
+          min-width: 100px;
+          color: transparent;
+          font-size: 2em;
+      }
+
+      #numberTable td.selected {
+          color: black;
+      }
+
+      .line-through {
+          text-decoration: line-through;
+      }
+
+      #categoryTable, td {
+              font-size: 14px;
+      }
+
+      @media (min-width: 1200px) {
+           .container {
+          width: 90%;
+          display: flex;
+        }
+      }

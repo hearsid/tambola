@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Tambola Game
+    </title>
+     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(chrome-extension://mmglbdoopeimbdhemfkhkinddmkkdlch/ui/assets/fonts/Roboto-Regular.ttf) format('ttf');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+    </style>
+</head>
+<span id="warning-container"><i data-reactroot=""></i></span>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+                <h1 class="heading" style="color:#fff; width: 100%">Tambola</h1>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="col-md-3 well well-lg text-left left-sidebar">
+            <div>Previous Number</div>
+
+            <div id="prevNum">0</div>
+
+            <table class="table" id="categoryTable">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Category</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-md-9">
+
+            <div class="bigNumberDisplay well well-lg">
+                <span id="numCounter" style="color: rgb(25, 75, 179); zoom: 100%;">0</span>
+                <span class="mirage" id="mirageElement" style="display: none;">90</span>
+                <div class="bingoNumberDesc" id="bingoWords"></div>
+            </div>
+            <div>
+                <input id="btnGenerate" type="button" value="GENERATE NUMBER" class="btn btn-primary" />
+            </div>
+            <br>
+
+            <div >
+                <table id="numberTable">
+                    <tbody>
+                        <tr>
+                            <td class="cell0">0</td>
+                            <td class="cell10">10</td>
+                            <td class="cell20">20</td>
+                            <td class="cell30">30</td>
+                            <td class="cell40">40</td>
+                            <td class="cell50">50</td>
+                            <td class="cell60">60</td>
+                            <td class="cell70">70</td>
+                            <td class="cell80">80</td>
+                            <td class="cell90">90</td>
+                        </tr>
+                        <tr>
+                            <td class="cell1">1</td>
+                            <td class="cell11">11</td>
+                            <td class="cell21">21</td>
+                            <td class="cell31">31</td>
+                            <td class="cell41">41</td>
+                            <td class="cell51">51</td>
+                            <td class="cell61">61</td>
+                            <td class="cell71">71</td>
+                            <td class="cell81">81</td>
+                            <td class="cell91">91</td>
+                        </tr>
+                        <tr>
+                            <td class="cell2">2</td>
+                            <td class="cell12">12</td>
+                            <td class="cell22">22</td>
+                            <td class="cell32">32</td>
+                            <td class="cell42">42</td>
+                            <td class="cell52">52</td>
+                            <td class="cell62">62</td>
+                            <td class="cell72">72</td>
+                            <td class="cell82">82</td>
+                            <td class="cell92">92</td>
+                        </tr>
+                        <tr>
+                            <td class="cell3">3</td>
+                            <td class="cell13">13</td>
+                            <td class="cell23">23</td>
+                            <td class="cell33">33</td>
+                            <td class="cell43">43</td>
+                            <td class="cell53">53</td>
+                            <td class="cell63">63</td>
+                            <td class="cell73">73</td>
+                            <td class="cell83">83</td>
+                            <td class="cell93">93</td>
+                        </tr>
+                        <tr>
+                            <td class="cell4">4</td>
+                            <td class="cell14">14</td>
+                            <td class="cell24">24</td>
+                            <td class="cell34">34</td>
+                            <td class="cell44">44</td>
+                            <td class="cell54">54</td>
+                            <td class="cell64">64</td>
+                            <td class="cell74">74</td>
+                            <td class="cell84">84</td>
+                            <td class="cell94">94</td>
+                        </tr>
+                        <tr>
+                            <td class="cell5">5</td>
+                            <td class="cell15">15</td>
+                            <td class="cell25">25</td>
+                            <td class="cell35">35</td>
+                            <td class="cell45">45</td>
+                            <td class="cell55">55</td>
+                            <td class="cell65">65</td>
+                            <td class="cell75">75</td>
+                            <td class="cell85">85</td>
+                            <td class="cell95">95</td>
+                        </tr>
+                        <tr>
+                            <td class="cell6">6</td>
+                            <td class="cell16">16</td>
+                            <td class="cell26">26</td>
+                            <td class="cell36">36</td>
+                            <td class="cell46">46</td>
+                            <td class="cell56">56</td>
+                            <td class="cell66">66</td>
+                            <td class="cell76">76</td>
+                            <td class="cell86">86</td>
+                            <td class="cell96">96</td>
+                        </tr>
+                        <tr>
+                            <td class="cell7">7</td>
+                            <td class="cell17">17</td>
+                            <td class="cell27">27</td>
+                            <td class="cell37">37</td>
+                            <td class="cell47">47</td>
+                            <td class="cell57">57</td>
+                            <td class="cell67">67</td>
+                            <td class="cell77">77</td>
+                            <td class="cell87">87</td>
+                            <td class="cell97">97</td>
+                        </tr>
+                        <tr>
+                            <td class="cell8">8</td>
+                            <td class="cell18">18</td>
+                            <td class="cell28">28</td>
+                            <td class="cell38">38</td>
+                            <td class="cell48">48</td>
+                            <td class="cell58">58</td>
+                            <td class="cell68">68</td>
+                            <td class="cell78">78</td>
+                            <td class="cell88">88</td>
+                            <td class="cell98">98</td>
+                        </tr>
+                        <tr>
+                            <td class="cell9">9</td>
+                            <td class="cell19">19</td>
+                            <td class="cell29">29</td>
+                            <td class="cell39">39</td>
+                            <td class="cell49">49</td>
+                            <td class="cell59">59</td>
+                            <td class="cell69">69</td>
+                            <td class="cell79">79</td>
+                            <td class="cell89">89</td>
+                            <td class="cell99">99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/number-words.constant.js"></script>
+    <script src="assets/js/tambola-categories.constant.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
