@@ -101,6 +101,10 @@
               font-size: 14px;
       }
 
+      #btnGenerate[disabled] {
+          cursor: progress;
+      }
+
       @media (min-width: 1200px) {
            .container {
           width: 90%;

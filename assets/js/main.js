@@ -91,6 +91,8 @@ $(function () {
     var random = 0;
     var animDuration = 2;
     $('#btnGenerate').click(function () {
+        var scope = this;
+        this.disabled = true;
         $('#prevNum').text($('#numCounter').text());
         random = bingo.generateNextRandom().toString();
         $("#numCounter").css("display", "none");
@@ -110,6 +112,7 @@ $(function () {
             $('td.cell' + random).addClass('selected');
             $("#numCounter").animate({ zoom: '200%' }, "slow");
             $("#numCounter").animate({ zoom: '100%' }, "slow");
+            scope.disabled = false;
 
         }, animDuration * 1000);
 
