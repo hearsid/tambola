@@ -10,14 +10,25 @@ const tambolaCategories = [
     // '2nd House -  Jab Tak Rahega Samose Mein Aloo, Tab Tak Rahega Bihar Mein Lalu-RJD 🔦- (1990)',
     // '3rd House -  Behanji ko Aane Do- Mayawati BSP (2017)🐘',
     // 'Lucky Ticket - Gali Gali Mein Shor Hai, Desh ke neta chor hain'
-    "Unlucky-Karo Ya Maro",                 
-    "Early-5—Sare Jahan Sei Acha Hindustan Humarha",
-    "Bamboo-Vande Matram(3 Times)",
-    "Corners-Inquilab Zindabad(3 TIMES)",
-    "Top-Line-Sarfaroshi Ki Tamanna Ab Hamare Dil Mein Hai Dehkna Hai Zor Kitna Baajuen Qaatil Mein Hai",
-    "Middle-Line-Tum Mujhe Khoon Do Mei Tumme Azadi Doonga",
-    "Bottom-Line-Swaraj Mera Janamsidh Adhikar Hai Aur Mei Isse Lekar Rahuga",
-    "First-House-How’s The Josh...High Sir",
-    "Second-House-Jai Jawan Jai Kisan",
-    "Third-House-Dushman Ki Goliyon Ka Hum Samna Karege Azad Hee Rahin Hai,Azad Hei Rahenge"
+    // "Unlucky-Karo Ya Maro",                 
+    // "Early-5—Sare Jahan Sei Acha Hindustan Humarha",
+    // "Bamboo-Vande Matram(3 Times)",
+    // "Corners-Inquilab Zindabad(3 TIMES)",
+    // "Top-Line-Sarfaroshi Ki Tamanna Ab Hamare Dil Mein Hai Dehkna Hai Zor Kitna Baajuen Qaatil Mein Hai",
+    // "Middle-Line-Tum Mujhe Khoon Do Mei Tumme Azadi Doonga",
+    // "Bottom-Line-Swaraj Mera Janamsidh Adhikar Hai Aur Mei Isse Lekar Rahuga",
+    // "First-House-How’s The Josh...High Sir",
+    // "Second-House-Jai Jawan Jai Kisan",
+    // "Third-House-Dushman Ki Goliyon Ka Hum Samna Karege Azad Hee Rahin Hai,Azad Hei Rahenge"
+
+    "Unlucky -Berang",
+    "Early5 - Panchrang ",
+    "Bamboo -Tiranga",
+    "Corners - Chauranga",
+    "Top line - Red Line",
+    "Middle line - Yellow Line",
+    "Bottom Line - Green Line",
+    "First House - White House 🏠 ",
+    "Second House - Green House 🏡" ,
+    "Lucky Wheel - Rangbiranga"
 ];
