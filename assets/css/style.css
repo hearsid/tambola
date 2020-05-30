@@ -1,6 +1,6 @@
       body {
           padding-top: 70px;
-          background: url('../img/back.jpg');
+          background: url('../img/background.png');
           background-attachment: fixed;
           background-size: 100% 100%;
 
@@ -56,12 +56,17 @@
       }
 
       .left-sidebar {
-        background: rgba(255,255,255,0.7)
+        background: rgba(255,255,255,0.8);
+        font-weight: bold;
+      }
+
+      #categoryTable > td {
+          font-weight: bold;
       }
 
       .bigNumberDisplay {
           font-size: 6em;
-          background: rgba(255,255,255,0.5)
+          background: rgba(255,255,255,0.8)
       }
 
       .numbersTable {
@@ -99,6 +104,7 @@
 
       #categoryTable, td {
               font-size: 14px;
+              font-weight: bold;
       }
 
       #btnGenerate[disabled] {
