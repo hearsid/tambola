@@ -21,14 +21,18 @@ const tambolaCategories = [
     // "Second-House-Jai Jawan Jai Kisan",
     // "Third-House-Dushman Ki Goliyon Ka Hum Samna Karege Azad Hee Rahin Hai,Azad Hei Rahenge"
 
-    "Unlucky -Berang",
-    "Early5 - Panchrang ",
-    "Bamboo -Tiranga",
-    "Corners - Chauranga",
-    "Top line - Red Line",
-    "Middle line - Yellow Line",
-    "Bottom Line - Green Line",
-    "First House - White House 🏠 ",
-    "Second House - Green House 🏡" ,
-    "Lucky Wheel - Rangbiranga"
+"Unlucky - Flop show",
+"First 5 - Hum5",
+"Bamboo - Tu Tu Main Main",
+"Corners - Chitrahar",
+
+"Firstline - Junior G",
+"Second line - Captain Vyom",
+"Thirdline - Shaktimaan",
+
+"First house - Ramayan",
+"Second house - Mahabharat",
+"Third house - Malgudi Days",
+
+"Lucky nub - Khichdi"
 ];
