@@ -1,12 +1,12 @@
 const tambolaCategories = [
-    "Unlucky- Shambhoo",
-    "First 5- Rudra",
-    "Bamboo- Bholenath",
-    "Corners- Shakara",
-    "Firstline- Shivaa",
-    "Second line- Mahakaal",
-    "Thirdline- Triloknath",
-    "First house - Om namah shivaye",
-    "Second house- Bam bam bhole",
-    "Third house- Har Har Mahadeva"
+    "Unlucky- Purple",
+    "First 5- Orange",
+    "Bamboo- Pink",
+    "Corners- Blue",
+    "Firstline- White",
+    "Second line- Gray",
+    "Thirdline- Black",
+    "First house - Gold",
+    "Second house- Silve",
+    "Third house- Brown"
 ];
